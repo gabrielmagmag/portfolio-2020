@@ -155,7 +155,7 @@ summary::marker
 
 footer
 {
-	padding-left: 30vw;
+	text-align: right;
 }
 
 @media (orientation: portrait) {
