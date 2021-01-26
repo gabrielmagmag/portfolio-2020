@@ -46,9 +46,12 @@ color: black;}
  aside details[open] summary img{
      opacity: 0;
 }
- ul {
+ul{
      padding: 0;
      margin: auto;
+
+}
+ aside ul {
     background-color: white;
     border-radius: 4px;
     /*! color: black; */
@@ -176,9 +179,15 @@ nav ul
  .appkraft{
      background-color: #180302;
 }
- .galerabusiness{
+ .littledisplay{
      background-image: linear-gradient(180deg, #1A264C 0vh, #0B1125 100vh);
 }
+
+ .galerabusiness{
+      background-image: url("img/galerabusinessbg.jpg");
+      background-size: 171%;
+      background-position: -31em -17.05em;
+    }
  footer {
     padding: 4ch;
 }
