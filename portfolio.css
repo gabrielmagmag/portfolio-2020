@@ -28,7 +28,7 @@ aside details summary img{
 	max-height: 33vh;
 	width: 170px;
 	object-fit: scale-down;
-	transition: all .12s ease-out;
+	transition: all 0.05s ease-in;
 }
 
 
@@ -38,7 +38,6 @@ aside details > img
 	position: fixed;
 	bottom: 180px;
 	left: 40px;
-	transition: all .12s ease-out;
 }
 
 aside details[open] summary img{
@@ -75,7 +74,7 @@ article > ul > li
 	/*! padding: 4ch; */
 }
 
-article p, article h2
+article p, article h2, article h3
 {
 	width: 40ch;
 	margin: auto;
@@ -113,7 +112,7 @@ details
 
 article details summary img
 {
-	transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
 }
 
 
@@ -121,11 +120,9 @@ details[open] img{
 	transform: scale(0.9);
 }
 
-details[open] ul
+details  ul
 {
-	display: none;
 }
-
 
 
 summary{
@@ -189,7 +186,6 @@ article details summary img
 	position: fixed;
 	bottom: 110px;
 	left: -80px;
-	transition: all .12s ease-out;
 }
 
 }
