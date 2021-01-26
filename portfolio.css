@@ -1,7 +1,7 @@
  * {box-sizing: border-box;
 } 
  body {
-     background-color: #FFF;
+     background-color: #000;
      font-size: 16.5px;
      font-weight: 400; 
      -webkit-font-smoothing: antialiased;
@@ -172,6 +172,7 @@ footer
 {
     max-width: 90vw;
     margin: auto;
+    background-color:#FFF;
 }
 
 @media only screen and (max-width: 430px) {
