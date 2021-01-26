@@ -1,25 +1,31 @@
- * {box-sizing: border-box;
-} 
- body {
+*{box-sizing: border-box;} 
+ 
+body{
      background-color: #000;
-     font-size: 16.5px;
-     font-weight: 400; 
-     -webkit-font-smoothing: antialiased;
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
      color: #000;
      display: grid;
      margin: auto;
+
+     font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif,
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          sans-serif;
+     font-size: 16.5px;
+     font-weight: 400; 
+     -webkit-font-smoothing: antialiased;   
 }
-
-     aside{
-     	position: absolute;
-     	/*! width: 80vw; */
-     	/*! margin: auto; */
-     	/*! display: flex; */
-     	/*! flex-direction: row; */
-    }
-
- aside details summary img{
+aside{
+     position: absolute;
+}
+aside details summary img{
      filter: invert(1);
      width: auto;
      height: auto;
@@ -32,108 +38,90 @@
      top: 4vh;
      left: 4vw;
 }
- aside details > img {
+aside details > img {
      width: 566px;
      bottom: 180px;
      left: 40px;
 }
- aside details[open] summary img{
+aside details[open] summary img{
      opacity: 0.5;
 }
 ul{
      padding: 0;
      margin: auto;
-
 }
- li {
+li{
      list-style: none;
      padding: 0;
      margin: auto;
 }
- article {
+article {
      display: grid;
      color: white;
 }
- article > ul > li {
+article > ul > li {
      min-width: 100vw;
      min-height: 50vh;
      height: auto;
      display: grid; 
-    /*! padding: 4ch;
-     */
 }
 
 nav{
-    display: grid;
+     display: grid;
 }
 
 
 aside details ul img
 {
-    width: 180px;
-    max-width: 50vw;
+     width: 180px;
+     max-width: 50vw;
 }
- 
+
 nav ul
 {
-    display: grid;
-    padding: 1ch 3ch;
-    width: 80vw;
-    margin-top:8vh;
+     display: grid;
+     padding: 1ch 3ch;
+     width: 80vw;
+     margin-top:8vh;
      color: white;
-
 }
- .har {
+.har {
      min-height: 100vh;
 }
- article p, article h2, article h3 {
+article p, article h2, article h3 {
      width: 40ch;
      margin: auto;
      max-width: 90vw;
 }  
- details{
+details{
      display: grid;
 } 
- details > img {
+details > img{
      max-width: 90vw;
      margin: auto;
 }
- article summary > img {
+article summary > img {
      margin: auto;
-    /*! width: auto;
-     */
-    /*! height: auto;
-     */
      max-width: 60vw;
      max-height: 50vh;
-    /*! width: 240px;
-     */
-    /*! height: 240px;
-     */
      object-fit: scale-down;
 }
-
-
-
- details {
+details{
      margin: auto;
 }
-
 .har details
 {
-    margin-top: 36vh;
-    justify-content: center;
-    align-content: center;
-    
+     margin-top: 36vh;
+     justify-content: center;
+     align-content: center;
 }
- article details summary img {
+article details summary img {
      transition: all 0.05s ease-in;
 }
- details[open] img{
+details[open] img{
      transform: scale(0.9);
 }
-
- summary{
+summary{
      cursor: pointer;
      margin: auto;
      list-style-image: none;
@@ -141,43 +129,39 @@ nav ul
      display: grid;
      width: 100vw;
 }
- summary::-webkit-details-marker {
+summary::-webkit-details-marker {
      display: none;
 }
- summary::marker {
+summary::marker {
      display: none;
 }
- .har{
+.har{
      background-color: #061F24;
      background-image: linear-gradient(180deg, #0E414B 0vh, #061F24 100vh);
 }
- .appkraft{
+.appkraft{
      background-color: #180302;
 }
- .littledisplay{
+.littledisplay{
      background-image: linear-gradient(180deg, #1A264C 0vh, #0B1125 100vh);
 }
-
- .galerabusiness{
-      background-image: url("img/galerabusinessbg.jpg");
-      background-size: 1900px;
-      background-position: center -180px;
-    }
- details img{
-     max-height: 80vh;
-
-}
-
-footer
-{
-    max-width: 90vw;
-    margin: auto;
-    background-color:#FFF;
-}
-
-@media only screen and (max-width: 430px) {
 .galerabusiness{
-      background-position: center -300px;
-  }
+     background-image: url("img/galerabusinessbg.jpg");
+     background-size: 1900px;
+     background-position: center -180px;
+}
+details img{
+     max-height: 80vh;
+}
+footer{
+     max-width: 90vw;
+     margin: auto;
+     background-color:#FFF;
+}
 
+
+@media only screen and (max-width: 430px){
+     .galerabusiness{
+          background-position: center -300px;
+     }
 }
