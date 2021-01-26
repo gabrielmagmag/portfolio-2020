@@ -12,11 +12,13 @@
      display: grid;
      margin: auto;
 }
- aside {
-     position: fixed;
-     bottom: 5vh;
-     left: 5vw;
-}
+
+     aside{
+     	position: fixed;
+         top: 3vw;
+         left: 3vw;
+    }
+
  aside details summary img{
      filter: invert(1);
      width: auto;
@@ -143,16 +145,8 @@
      aside img{
          width: 150px;
     }
-     aside{
-         top: 3vw;
-         left: 3vw;
-    }
+
      article details summary img {
          max-width: 53vw;
-    }
-     aside details > img {
-     	position: relative;
-     	top: 10px;
-     	left: -40px;
     }
 }
