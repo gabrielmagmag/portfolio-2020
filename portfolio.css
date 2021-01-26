@@ -1,6 +1,4 @@
- * {
-    /*! box-sizing: border-box;
-     */
+ * {box-sizing: border-box;
 } 
  body {
      background-color: #FFF;
@@ -100,6 +98,7 @@ nav{
 aside details ul img
 {
     width: 180px;
+    max-width: 50vw;
 }
  
 nav ul
@@ -189,12 +188,15 @@ nav ul
       background-size: 1900px;
       background-position: center -180px;
     }
- footer {
-    padding: 4ch;
-}
  details img{
      max-height: 80vh;
 
+}
+
+footer
+{
+    max-width: 90vw;
+    margin: auto;
 }
 
 }/*
