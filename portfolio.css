@@ -153,7 +153,10 @@ summary::marker
 }
 
 
-
+footer
+{
+	padding-left: 30vw;
+}
 
 @media (orientation: portrait) {
   details {
