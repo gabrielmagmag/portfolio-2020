@@ -14,7 +14,7 @@
 }
  aside {
      position: fixed;
-     bottom: 5vw;
+     bottom: 5vh;
      left: 5vw;
 }
  aside details summary img{
