@@ -57,7 +57,11 @@ article > ul > li
 
 article img
 {
-	margin: auto;
+	/*! margin: auto; */
+	/*! width: auto; */
+	/*! height: auto; */
+	/*! max-width: 80vw; */
+	/*! max-height: 80vh; */
 }
 
 
@@ -65,20 +69,29 @@ article img
 details
 {
 	margin: auto;
-	width: 100%;
-	height: 100%;
-	display: grid;
-	justify-content: center;
- 	align-content: center;
+	/*! width: 100%; */
+	/*! height: 100%; */
+	/*! display: grid; */
+	/*! justify-content: center; */
+ 	/*! align-content: center; */
 }
 
 summary{
 	cursor: pointer;
 	margin: auto;
+	/*! display: grid; */
+	/*! width: 100vw; */
+	/*! height: 100vh; */
+	/*! display: none; */
 }
 
 summary::-webkit-details-marker {
     display: none;
+}
+
+summary::marker
+{
+	display: none;
 }
 
 
