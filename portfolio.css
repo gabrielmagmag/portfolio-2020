@@ -106,6 +106,16 @@ details
  	/*! align-content: center; */
 }
 
+@media (orientation: portrait) {
+  details {
+    margin-top: 29vh;
+ }
+ 	aside img{
+	width: 150px;
+}
+
+}
+
 
 article details summary img
 {
