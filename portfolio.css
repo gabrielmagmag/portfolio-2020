@@ -16,7 +16,7 @@ body
 aside
 {
 	position: fixed;
-	top: -300px;
+	bottom: 5vw;
 	left: 5vw;
 }
 
@@ -36,8 +36,8 @@ aside details > img
 {
 	width: 566px;
 	position: fixed;
-	top: 80px;
-	left: 220px;
+	bottom: 180px;
+	left: 40px;
 	transition: all .12s ease-out;
 }
 
@@ -88,7 +88,7 @@ article img
 	margin: 9ch auto auto auto;
 	/*! width: auto; */
 	/*! height: auto; */
-	max-width: 100vw;
+	max-width: 60vw;
 	max-height: 50vh;
 	/*! width: 240px; */
 	/*! height: 240px; */ 
@@ -174,9 +174,9 @@ footer
 }
 
 aside{
-	top: -140px;
-	left: 5vw;
-	}
+	bottom: 3vw;
+	left: 3vw;
+}
 
 article details summary img
 {
@@ -185,10 +185,10 @@ article details summary img
 	
 	aside details > img
 {
-	width: 420px;
+	width: 466px;
 	position: fixed;
-	top: 20px;
-	left: 120px;
+	bottom: 110px;
+	left: -80px;
 	transition: all .12s ease-out;
 }
 
