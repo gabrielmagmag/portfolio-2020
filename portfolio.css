@@ -1,7 +1,7 @@
  * {
     /*! box-sizing: border-box;
      */
-}
+} 
  body {
      background-color: #1E1E1E;
      font-size: 16.5px;
@@ -20,6 +20,9 @@
      	/*! display: flex; */
      	/*! flex-direction: row; */
     }
+
+aside details{
+color: black;}
 
  aside details summary img{
      filter: invert(1);
@@ -48,7 +51,7 @@
      margin: auto;
     background-color: white;
     border-radius: 4px;
-    color: black;
+    /*! color: black; */
 }
  li {
      list-style: none;
@@ -62,7 +65,7 @@
      min-width: 100vw;
      min-height: 50vh;
      height: auto;
-     display: grid;
+     display: grid; 
     /*! padding: 4ch;
      */
 }
@@ -84,9 +87,9 @@ nav{
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     nav{
-            -webkit-backdrop-filter: grayscale(100%) blur(10px);
-    backdrop-filter: grayscale(100%) blur(10px);
-    background-color: rgba(255, 255, 255, 0.1);  
+            -webkit-backdrop-filter: grayscale(100%);
+    backdrop-filter: grayscale(100%);
+    background-color: rgba(255, 255, 255, 0.15);  
     }
 }
 
@@ -94,7 +97,7 @@ aside details ul img
 {
     width: 180px;
 }
-
+ 
 nav ul
 {
     display: flex;
@@ -109,10 +112,9 @@ nav ul
      width: 40ch;
      margin: auto;
      max-width: 90vw;
-}
+}  
  details{
-     /*! display: flex; */
-     /*! flex-direction: row; */
+     display: grid;
 } 
  details > img {
      max-width: 90vw;
@@ -152,8 +154,7 @@ nav ul
  details[open] img{
      transform: scale(0.9);
 }
- details ul {
-}
+
  summary{
      cursor: pointer;
      margin: auto;
