@@ -20,7 +20,7 @@ aside
 	left: 5vw;
 }
 
-aside img{
+aside details summary img{
 	filter: invert(1);
 	width: auto;
 	height: auto;
@@ -28,6 +28,11 @@ aside img{
 	max-height: 33vh;
 	width: 170px;
 	object-fit: scale-down;
+}
+
+aside > details > img
+{
+	width: 500px;
 }
 
 ul
