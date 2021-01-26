@@ -1,0 +1,96 @@
+
+* {box-sizing: border-box;}
+
+body
+{
+	background-color: #1E1E1E;
+	font-size: 16.5px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+	color: white;
+	display: grid;
+	margin: auto;
+}
+
+aside
+{
+	position: fixed;
+	bottom: 8ch;
+	left: 8ch;
+}
+
+aside img{
+	filter: invert(1);
+	width: 150px;
+	height: auto;
+}
+
+ul
+{
+	padding: 0;
+	margin: auto;
+}
+
+li
+{
+	list-style: none;
+	padding: 0;
+	margin: auto;
+}
+
+article
+{
+	display: grid;
+}
+
+article > ul > li
+{
+	min-width: 100vw;
+	min-height: 100vh;
+	height: auto;
+	display: grid;
+	align-items: center;
+	align-self: center;
+	padding: 4ch;
+}
+
+article img
+{
+	margin: auto;
+}
+
+
+
+details
+{
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	justify-content: center;
+ 	align-content: center;
+}
+
+summary{
+	cursor: pointer;
+	margin: auto;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+
+
+
+.har{
+	background-color: #061F24;
+	background-image: linear-gradient(180deg, #0E414B 0%, #061F24 100%);
+}
+.appkraft{
+	background-color: #180302;
+}
+.galerabusiness{
+	background-image: linear-gradient(180deg, #1A264C 0%, #0B1125 100%);
+}
