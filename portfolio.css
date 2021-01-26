@@ -16,8 +16,8 @@ body
 aside
 {
 	position: fixed;
-	bottom: 2vw;
-	left: 2vw;
+	bottom: 5vw;
+	left: 5vw;
 }
 
 aside img{
@@ -106,15 +106,7 @@ details
  	/*! align-content: center; */
 }
 
-@media (orientation: portrait) {
-  details {
-    margin-top: 29vh;
- }
- 	aside img{
-	width: 150px;
-}
 
-}
 
 
 article details summary img
@@ -158,4 +150,27 @@ summary::marker
 }
 .galerabusiness{
 	background-image: linear-gradient(180deg, #1A264C 0vh, #0B1125 100vh);
+}
+
+
+
+
+@media (orientation: portrait) {
+  details {
+    margin-top: 29vh;
+ }
+ 	aside img{
+	width: 150px;
+}
+
+aside{
+	bottom: 3vw;
+	left: 3vw;
+}
+
+article details summary img
+{
+	max-width: 53vw;
+}
+
 }
