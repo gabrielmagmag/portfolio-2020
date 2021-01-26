@@ -5,7 +5,7 @@
  body {
      background-color: #1E1E1E;
      font-size: 16.5px;
-     font-weight: 400;
+     font-weight: 400; 
      -webkit-font-smoothing: antialiased;
      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
      color: white;
@@ -15,8 +15,10 @@
 
      aside{
      	position: fixed;
-         top: 3vw;
-         left: 3vw;
+     	/*! width: 80vw; */
+     	/*! margin: auto; */
+     	/*! display: flex; */
+     	/*! flex-direction: row; */
     }
 
  aside details summary img{
@@ -36,7 +38,7 @@
      left: 40px;
 }
  aside details[open] summary img{
-     opacity: 0.5;
+     opacity: 0;
 }
  ul {
      padding: 0;
@@ -58,6 +60,20 @@
     /*! padding: 4ch;
      */
 }
+
+nav{
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    width: 80vw;
+    margin: auto;
+}
+nav ul
+{
+    display: flex;
+    padding: 1ch 3ch;
+
+}
  .har {
      min-height: 100vh;
 }
@@ -67,9 +83,9 @@
      max-width: 90vw;
 }
  details{
-     display: grid;
-     margin: auto;
-}
+     /*! display: flex; */
+     /*! flex-direction: row; */
+} 
  details > img {
      max-width: 90vw;
      margin: auto;
@@ -116,6 +132,7 @@
      list-style-image: none;
      outline: none;
      display: grid;
+     width: 100vw;
 }
  summary::-webkit-details-marker {
      display: none;
@@ -134,11 +151,14 @@
      background-image: linear-gradient(180deg, #1A264C 0vh, #0B1125 100vh);
 }
  footer {
-     text-align: right;
+    padding: 4ch;
 }
  details img{
      max-height: 80vh;
+
 }
+
+}/*
  @media (orientation: portrait) {
      details {
     }
@@ -149,4 +169,4 @@
      article details summary img {
          max-width: 53vw;
     }
-}
+}*/
