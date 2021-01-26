@@ -2,7 +2,7 @@
 * {/*! box-sizing: border-box; */}
  
 body
-{
+{  
 	background-color: #1E1E1E;
 	font-size: 16.5px;
 	font-weight: 400;
@@ -16,7 +16,8 @@ body
 aside
 {
 	position: fixed;
-	bottom: 0;
+	bottom: 2vw;
+	left: 2vw;
 }
 
 aside img{
@@ -25,6 +26,8 @@ aside img{
 	height: auto;
 	max-width: 33vw;
 	max-height: 33vh;
+	width: 170px;
+	object-fit: scale-down;
 }
 
 ul
@@ -77,8 +80,8 @@ article img
 }
  
 aside details{
-	width: 170px;
-	height: auto;
+	/*! width: 170px; */
+	/*! height: auto; */
 	transition: opacity .12s ease-out;
 }
 
@@ -132,6 +135,7 @@ summary{
 	display: grid;
 
 	
+	/*! width: 170px; */
 }
 
 summary::-webkit-details-marker {
