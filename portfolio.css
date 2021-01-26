@@ -28,12 +28,23 @@ aside details summary img{
 	max-height: 33vh;
 	width: 170px;
 	object-fit: scale-down;
+	transition: all .12s ease-out;
 }
 
-aside > details > img
+
+aside details > img
 {
-	width: 500px;
+	width: 566px;
+	position: fixed;
+	bottom: 180px;
+	left: 40px;
+	transition: all .12s ease-out;
 }
+
+aside details[open] summary img{
+	  opacity: 0.5;
+}
+
 
 ul
 {
@@ -71,10 +82,10 @@ article p, article h2
 	max-width: 90vw;
 	
 }
- 
+  
 article img
 { 
-	margin: 9ch auto 9ch auto;
+	margin: 9ch auto auto auto;
 	/*! width: auto; */
 	/*! height: auto; */
 	max-width: 60vw;
@@ -84,22 +95,7 @@ article img
 	object-fit: scale-down;
 
 }
- 
-aside details{
-	/*! width: 170px; */
-	/*! height: auto; */
-	transition: all .12s ease-out;
-}
 
-aside details:hover{
-	opacity: 0.5;
-}
-
-aside details:active{
-  position: relative;
-	top: 2px;
-	transform: scale(0.99, 0.99);
-}
 
 details
 {
@@ -185,6 +181,15 @@ aside{
 article details summary img
 {
 	max-width: 53vw;
+}
+	
+	aside details > img
+{
+	width: 466px;
+	position: fixed;
+	bottom: 110px;
+	left: -80px;
+	transition: all .12s ease-out;
 }
 
 }
