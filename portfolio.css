@@ -199,15 +199,9 @@ footer
     margin: auto;
 }
 
-}/*
- @media (orientation: portrait) {
-     details {
-    }
-     aside img{
-         width: 150px;
-    }
+@media only screen and (max-width: 430px) {
+.galerabusiness{
+      background-position: center -300px;
+  }
 
-     article details summary img {
-         max-width: 53vw;
-    }
-}*/
+}
