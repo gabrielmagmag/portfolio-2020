@@ -53,8 +53,6 @@
      min-height: 50vh;
      height: auto;
      display: grid;
-     align-content: start;
-     justify-content: center;
     /*! padding: 4ch;
      */
 }
@@ -88,19 +86,19 @@
      */
      object-fit: scale-down;
 }
+
+
+
  details {
      margin: auto;
-     margin-top: 36vh;
-    /*! width: 100%;
-     */
-    /*! height: 100%;
-     */
-    /*! display: grid;
-     */
-    /*! justify-content: center;
-     */
-    /*! align-content: center;
-     */
+}
+
+.har details
+{
+    margin-top: 36vh;
+    justify-content: center;
+    align-content: center;
+    
 }
  article details summary img {
      transition: all 0.05s ease-in;
@@ -141,22 +139,20 @@
 }
  @media (orientation: portrait) {
      details {
-         margin-top: 25vh;
     }
      aside img{
          width: 150px;
     }
      aside{
-         bottom: 3vw;
+         top: 3vw;
          left: 3vw;
     }
      article details summary img {
          max-width: 53vw;
     }
      aside details > img {
-         width: 466px;
-         position: fixed;
-         bottom: 110px;
-         left: -80px;
+     	position: relative;
+     	top: 10px;
+     	left: -40px;
     }
 }
