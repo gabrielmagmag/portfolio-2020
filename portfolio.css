@@ -104,7 +104,7 @@ aside details ul img
  
 nav ul
 {
-    display: flex;
+    display: grid;
     padding: 1ch 3ch;
     width: 80vw;
     margin-top:8vh; 
