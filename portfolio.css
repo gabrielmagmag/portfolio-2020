@@ -90,6 +90,10 @@ nav{
     }
 }
 
+aside details ul img
+{
+    width: 180px;
+}
 
 nav ul
 {
