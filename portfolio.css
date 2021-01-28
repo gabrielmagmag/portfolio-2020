@@ -1,4 +1,12 @@
-*{box-sizing: border-box;} 
+/*********** B O NUS (add @support assim que der) ***********/
+summary::-webkit-details-marker{
+     display: none;
+}
+summary::marker {
+     display: none;
+}
+*{box-sizing: border-box;}
+
 body{
      font-family:
           -apple-system,
@@ -17,40 +25,15 @@ body{
      -webkit-font-smoothing: antialiased;   
 
      display: grid;
-     background-color: #000;
-     color: #000;
      margin: auto;
+     background-color: black;
      
-     grid-template-columns: 100vw;
-     grid-template-rows: 20vh minmax(40vh,1fr) auto;
-}
-ul{
-     padding: 0;
-     margin: auto;
-}
-li{
-     list-style: none;
-     padding: 0;
-     margin: auto;
 }
 
-main h1,
-main h2,
-main h3,
-main p {
-     margin: auto;
-}
-
-nav{
+header{
      display: grid;
-     background-color: #0E414B;
-     padding: 4ch 0 0 4ch;
 }
-nav details[open] summary img{
-     opacity:0.5;
-     transform: scale(0.9);
-}
-nav img{
+header img{
      filter: invert(1);
      width: 170px;
      object-fit: scale-down;
@@ -59,46 +42,19 @@ nav img{
      max-height: 33vh;
 }
 
-main {
+article {
      display: grid;
-     color: white;
 }
-main img{
-     margin: auto;
+img{
      height: auto;
      max-width: 100vw;
      max-height: 80vh;
-}
-main summary > img {
      margin: auto;
-     max-width: 60vw;
-     max-height: 50vh;
-     object-fit: scale-down;
-}
-main details summary img {
-     transition: all 0.05s ease-in;
-}
-main > ul > li {
-     min-width: 100vw;
-     min-height: 50vh;
-     height: auto;
-     display: grid; 
 }
 
-footer{
-     width: 100vw;
-     padding: 4ch;
-     margin: auto;
-     background-color:#FFF;
-}
+/*********** DETAILS ***********/
 
-/*********** DETAILS > SUMMARY ***********/
 
-details{
-     display: grid;
-     grid-template-columns: 1;
-     grid-template-rows: auto;
-}
 details[open] summary img{
      transform: scale(0.9);
 }
@@ -112,56 +68,27 @@ summary{
 
 
 /*********** CLASSES ***********/
-.har {
-     min-height: 100vh;
+
+.projectX {
 }
-.har{
-     background-color: #061F24;
+.projectX{
+     background-color: #082A31;
      background-image: linear-gradient(180deg, #0E414B 0vh, #061F24 100vh);
 }
-.har details{
-     margin-top: 14vh;
-     justify-content: center;
-     align-content: center;
+.projectA{
+     background-color: #050F1C;
+
 }
-.appkraft{
-     background-color: #180302;
+.projectB{
+     background-color: #BAE5F3;
 }
-.littledisplay{
-     background-image: linear-gradient(180deg, #1A264C 0vh, #0B1125 100vh);
-}
-.galerabusiness{
-     background-image: url("img/galerabusinessbg.jpg");
-     background-size: 1900px;
-     background-position: center -180px;
-}
-.button{
-     margin: auto;
-     height: 44px;
-     background-color: #ccc;
-     border-radius: 100px;
-     padding:1ch;
-     width: 200px;
-     text-align: center;
-}
-.button:hover{
-     opacity:0.5;
+.projectC{
+     background-color: #F4F4F4;
 }
 
-/*********** SINAL DE FUMAÇA BG POSITION ***********/
-@media
-only screen
-and  (max-width: 430px)
-     {
-     .galerabusiness{
-               background-position: center -300px;
-          }
-     }
 
-/*********** B O NUS (add @support assim que der) ***********/
-summary::-webkit-details-marker{
-     display: none;
-}
-summary::marker {
-     display: none;
+footer
+{
+     display: grid;
+     background-color: #FDFEB7;
 }
