@@ -91,6 +91,9 @@ summary{
      background-color: #F4F4F4;
 }
 
+.featured{
+     min-height: 100vh;
+}
 
 footer
 {
