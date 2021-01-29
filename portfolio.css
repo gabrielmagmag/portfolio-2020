@@ -26,12 +26,14 @@ body{
 
      display: grid;
      margin: auto;
-     background-color: black;
+     background-color: white;
      
 }
 
 header{
      display: grid;
+     position: absolute;
+     padding: 4ch;
 }
 header img{
      filter: invert(1);
@@ -42,9 +44,9 @@ header img{
      max-height: 33vh;
 }
 
-article {
+article,footer {
      display: grid;
-     min-height: 33vh;
+     min-height: 31vh;
 }
 img{
      height: auto;
