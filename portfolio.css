@@ -47,7 +47,7 @@ h1
 details{
      margin: auto;
      display: grid;
-     width: 100%;
+/*     width: 100%;*/
 }
 details[open] summary img{
      transform: scale(0.95);
@@ -58,6 +58,10 @@ summary{
      list-style-image: none;
      outline: none;
      display: grid;
+     transition: all 0.1s ease-in;
+}
+summary:hover{
+     filter: brightness(1.1);
 }
 summary > img{
      max-height: 33vh;
@@ -88,7 +92,7 @@ padding: 25vh 0;
      background-color: #A2E7FF;
 }
 .projectC{
-     background-color: #F4F4F4;
+     background-color: #fff;
 /*     background-image: linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 100%);*/
 }
 .footer{
