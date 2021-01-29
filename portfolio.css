@@ -37,8 +37,6 @@ img{
      max-width: 100vw;
      max-height: 80vh;
 }
-h1{
-}
 
 article {
           display: grid;
@@ -54,7 +52,7 @@ details{
      display: grid;
 }
 details[open] summary img{
-     transform: scale(0.9);
+     transform: scale(0.95);
 }
 summary{
      cursor: pointer;
@@ -76,8 +74,16 @@ summary > img{
 .projectA{
      background-color: #050F1C;
      min-height: 100vh;
-     padding-top: 33vh;
+     padding: 14vh 0;
      color: aliceblue;
+}
+summary > img{
+     max-height: 90vh;
+     transform: translateX(10%);
+}
+
+.projectA details[open] summary img{
+          transform: scale(1);
 }
 .projectB{
      background-color: #BAE5F3;
