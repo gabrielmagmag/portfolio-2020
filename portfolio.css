@@ -1,10 +1,4 @@
-/*********** B O NUS (add @support assim que der) ***********/
-summary::-webkit-details-marker{
-     display: none;
-}
-summary::marker {
-     display: none;
-}
+
 *{box-sizing: border-box;}
 
 body{
@@ -29,36 +23,36 @@ body{
      background-color: white;
      
 }
-
 header{
-     display: grid;
      position: absolute;
-     padding: 4ch;
+     padding: 5vmin 0 0 6vmin;
 }
 header img{
      filter: invert(1);
-     width: 170px;
-     object-fit: scale-down;
-     transition: all 0.05s ease-in;
-     max-width: 33vw;
-     max-height: 33vh;
-}
-
-article,footer {
-     display: grid;
-     min-height: 31vh;
+     width: 162px;
+     object-fit:scale-down;
+     max-width: 37vw;
+     max-height: 32vh;
 }
 img{
-     height: auto;
+     margin: auto;
      max-width: 100vw;
      max-height: 80vh;
-     margin: auto;
+}
+article {
+          display: grid;
+          align-content: start;
+          padding: 10vh 0;
+}
+h1{
+     margin-bottom: 30vh;
 }
 
 /*********** DETAILS ***********/
 
 details{
      margin: auto;
+     display: grid;
 }
 details[open] summary img{
      transform: scale(0.9);
@@ -70,19 +64,22 @@ summary{
      outline: none;
      display: grid;
 }
-
+summary > img{
+     max-height: 33vh;
+}
 
 /*********** CLASSES ***********/
 
-.projectX {
-}
+.projectX {}
 .projectX{
      background-color: #082A31;
      background-image: linear-gradient(180deg, #0E414B 0vh, #061F24 100vh);
 }
 .projectA{
      background-color: #050F1C;
-
+     height: 100vh;
+     align-content: center;
+     padding: 0;
 }
 .projectB{
      background-color: #BAE5F3;
@@ -90,13 +87,17 @@ summary{
 .projectC{
      background-color: #F4F4F4;
 }
-
+.footer{
+     background-color: #FDFEB7;
+}
 .featured{
-     min-height: 100vh;
+     min-height: 50vh;
 }
 
-footer
-{
-     display: grid;
-     background-color: #FDFEB7;
+/*********** B O NUS (add @support assim que der) ***********/
+summary::-webkit-details-marker{
+     display: none;
+}
+summary::marker {
+     display: none;
 }
