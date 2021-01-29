@@ -1,6 +1,4 @@
-
 *{box-sizing: border-box;}
-
 body{
      font-family:
           -apple-system,
@@ -39,14 +37,15 @@ img{
      max-width: 100vw;
      max-height: 80vh;
 }
+h1{
+}
+
 article {
           display: grid;
           align-content: start;
           padding: 10vh 0;
 }
-h1{
-     margin-bottom: 30vh;
-}
+
 
 /*********** DETAILS ***********/
 
@@ -70,16 +69,15 @@ summary > img{
 
 /*********** CLASSES ***********/
 
-.projectX {}
 .projectX{
      background-color: #082A31;
      background-image: linear-gradient(180deg, #0E414B 0vh, #061F24 100vh);
 }
 .projectA{
      background-color: #050F1C;
-     height: 100vh;
-     align-content: center;
-     padding: 0;
+     min-height: 100vh;
+     padding-top: 33vh;
+     color: aliceblue;
 }
 .projectB{
      background-color: #BAE5F3;
@@ -89,9 +87,6 @@ summary > img{
 }
 .footer{
      background-color: #FDFEB7;
-}
-.featured{
-     min-height: 50vh;
 }
 
 /*********** B O NUS (add @support assim que der) ***********/
