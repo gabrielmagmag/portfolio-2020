@@ -44,6 +44,7 @@ header img{
 
 article {
      display: grid;
+     min-height: 33vh;
 }
 img{
      height: auto;
@@ -54,7 +55,9 @@ img{
 
 /*********** DETAILS ***********/
 
-
+details{
+     margin: auto;
+}
 details[open] summary img{
      transform: scale(0.9);
 }
