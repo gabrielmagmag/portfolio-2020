@@ -50,6 +50,7 @@ article {
 details{
      margin: auto;
      display: grid;
+     width: 100%;
 }
 details[open] summary img{
      transform: scale(0.95);
@@ -63,6 +64,7 @@ summary{
 }
 summary > img{
      max-height: 33vh;
+     object-fit: scale-down;
 }
 
 /*********** CLASSES ***********/
@@ -77,14 +79,15 @@ summary > img{
      padding: 14vh 0;
      color: aliceblue;
 }
-summary > img{
+.projectA summary > img{
      max-height: 90vh;
-     transform: translateX(10%);
+     transform: translateX(7%);
 }
 
 .projectA details[open] summary img{
-          transform: scale(1);
+     transform: scale(0.95) translateX(7%);
 }
+
 .projectB{
      background-color: #BAE5F3;
 }
