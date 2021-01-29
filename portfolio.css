@@ -41,7 +41,7 @@ img{
 article {
           display: grid;
           align-content: start;
-          padding: 10vh 0;
+          padding: 11vh 0;
 }
 
 
@@ -76,18 +76,9 @@ summary > img{
 .projectA{
      background-color: #050F1C;
      min-height: 100vh;
-     padding: 14vh 0;
      color: aliceblue;
+     padding: 33vh 0;
 }
-.projectA summary > img{
-     max-height: 90vh;
-     transform: translateX(7%);
-}
-
-.projectA details[open] summary img{
-     transform: scale(0.95) translateX(7%);
-}
-
 .projectB{
      background-color: #BAE5F3;
 }
