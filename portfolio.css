@@ -133,13 +133,13 @@ padding: 25vh 0;
 
 .gallery-appkraft{
      display: flex;
-     width: 100%;
-    max-width: 400px;
-     overflow: scroll;
+     overflow: auto;
+     scroll-snap-type: mandatory;
 }
 
 .gallery-appkraft img
 {
+     scroll-snap-align: center; 
 }
 
 
