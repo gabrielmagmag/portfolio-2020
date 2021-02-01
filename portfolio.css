@@ -187,18 +187,13 @@ padding: 25vh 0;
           text-align: left;
           columns: 2;
      }
-.har-rentals a, .har-rentals a:visited{
+.har-rentals a,
+.har-rentals a:visited{
      color: green;        
 }
 
-.har-rentals summary::-webkit-details-marker{
-     display: block;
-}
-.har-rentals summary::marker{
-     display: block;
-}
 
-/*********** (add @support) */
+/*********** (add @support)
 
 summary::-webkit-details-marker{
      display: none;
@@ -206,7 +201,7 @@ summary::-webkit-details-marker{
 summary::marker{
      display: none;
 }
-
+ */
 
 
 
