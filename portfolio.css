@@ -45,9 +45,6 @@ h1{
 section p{
      text-align: center;
 }
-
-/*********** DETAILS */
-
 details{
      margin: auto;
      display: grid;
@@ -71,10 +68,6 @@ summary > img{
      max-height: 33vh;
      object-fit: scale-down;
 }
-
-
-/*********** CLASSES */
-
 .feadtured{
 min-height: 80vh;
 padding: 25vh 0;
@@ -99,7 +92,6 @@ padding: 25vh 0;
 .footer{
      background-color: #FDFEB7;
 }
-
 .gabrielRodrigues {
      position: absolute;
      background: none;
@@ -121,7 +113,6 @@ padding: 25vh 0;
      max-width: 37vw;
      max-height: 32vh;
 }
-
 .gallery-appkraft{
      display: flex;
      overflow: auto;
@@ -130,7 +121,6 @@ padding: 25vh 0;
 .gallery-appkraft img{
      scroll-snap-align: center; 
 }
-
 .mansory {
      list-style: none;
      margin: auto;
@@ -144,8 +134,7 @@ padding: 25vh 0;
      text-align: center;
 
 }
-.mansory > *
-{
+.mansory > * {
      flex: 1 1 20em;
      justify-self: center;
      align-self: center;
@@ -157,13 +146,6 @@ padding: 25vh 0;
 .mansory li {
      margin: auto;
 }
-/*
-
-.mansory li:nth-child(1) img
-{
-     max-width: 100%;
-}
-*/
 .mansory img {
      max-width: 30vw;
      max-height: 80vh;
@@ -173,7 +155,7 @@ padding: 25vh 0;
 }
 .har-rentals {
      color: white;
-     max-width: 80vw;
+     max-width: 90vw;
      display: grid;
 }
 .har-rentals img{
@@ -183,42 +165,68 @@ padding: 25vh 0;
      margin: auto;
      padding: 4vh 0;
 }
-.har-rentals p{
+.har-rentals > p{
           text-align: left;
-          columns: 2;
-          max-width: 66ch;
+          column-count: 2;
+          max-width: 55ch;
+          column-gap: 2vw;
+          font-size: 22px;
+          line-height: 29px;          
      }
+.har-rentals p{
+     column-count: 2;
+     text-align: left;
+}
+.har-rentals em{
+     display: block;
+     font-size: 34px;
+     line-height: 38px;
+     font-style: normal;
+     margin-bottom: 1ch;
+}
 .har-rentals a,
 .har-rentals a:visited{
      color: green;        
 }
-
-
 .har-rentals summary::-webkit-details-marker{
      display: inline;
 }
 .har-rentals summary::marker{
      display: inline;
 }
-
 .har-rentals details{
      background-color: black;
      border-radius: 40px;
      padding: 6vw;
+     width: 100%;
 }
-
-
-/*********** (add @support)
-
 summary::-webkit-details-marker{
      display: none;
 }
 summary::marker{
      display: none;
 }
- */
 
 
+@media only screen and (max-width: 600px) {
+
+     .har-rentals em{
+          font-size: 24px;
+          line-height: 28px;
+     }
+     
+     .har-rentals p{
+          font-size: 18px;
+          line-height: 23px;
+     }
+     
+    .har-rentals details p{
+          font-size: 16px; 
+          column-count: 2;
+         column-gap: 0.6ch;
+     }
+     
+}
 
 
 
