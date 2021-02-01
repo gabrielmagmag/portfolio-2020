@@ -133,18 +133,43 @@ padding: 25vh 0;
 
 .mansory {
      list-style: none;
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-gap: 10vw;
-     width: 80vw;
+     margin: auto;
+     padding: 0;
+
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     width: 100vw;
+     
+     text-align: center;
+
+}
+.mansory > *
+{
+     flex: 1 1 20em;
+     justify-self: center;
+     align-self: center;
+     justify-content: center;
+     align-content: center;
+     justify-items: center;
+     align-items: center;
 }
 .mansory li {
      margin: auto;
 }
+/*
+
+.mansory li:nth-child(1) img
+{
+     max-width: 100%;
+}
+*/
 .mansory img {
-     width: 100%;
+     max-width: 30vw;
+     max-height: 80vh;
+     width: auto;
      height: auto;
-     margin: auto;     
+     margin: 10vh 2vw;
 }
 .har-rentals {
      color: white;
