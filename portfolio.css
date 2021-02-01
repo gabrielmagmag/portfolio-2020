@@ -44,11 +44,13 @@ h1{
 }
 section p{
      text-align: center;
+     margin: auto;
 }
+
+
 details{
      margin: auto;
-     display: grid;
-/*     width: 100%;*/
+     text-align: center;
 }
 details[open] summary img{
      transform: scale(0.95);
@@ -58,7 +60,6 @@ summary{
      margin: auto;
      list-style-image: none;
      outline: none;
-     display: grid;
      transition: all 0.1s ease-in;
 }
 summary:hover{
@@ -68,6 +69,8 @@ summary > img{
      max-height: 33vh;
      object-fit: scale-down;
 }
+
+
 .feadtured{
 min-height: 80vh;
 padding: 25vh 0;
@@ -92,6 +95,7 @@ padding: 25vh 0;
 .footer{
      background-color: #FDFEB7;
 }
+
 .gabrielRodrigues {
      position: absolute;
      background: none;
@@ -153,6 +157,7 @@ padding: 25vh 0;
      height: auto;
      margin: 10vh 2vw;
 }
+
 .har-rentals {
      color: white;
      max-width: 90vw;
@@ -188,25 +193,35 @@ padding: 25vh 0;
 .har-rentals a:visited{
      color: green;        
 }
-.har-rentals summary::-webkit-details-marker{
-     display: inline;
-}
-.har-rentals summary::marker{
-     display: inline;
-}
+
 .har-rentals details{
      background-color: black;
      border-radius: 40px;
-     padding: 6vw;
-     width: 100%;
+     padding: 1vmax;
+}
+.har-rentals summary{
+     display: inline;
+}
+
+.har-rentals h2{
+     padding: 0;
+     margin: 0;
+     display: inline;
+}
+
+
+summary::marker{
+     display: none;
 }
 summary::-webkit-details-marker{
      display: none;
 }
-summary::marker{
-     display: none;
+.har-rentals summary::marker{
+     display: block;
 }
-
+.har-rentals summary::-webkit-details-marker{
+     display: block;
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -227,8 +242,6 @@ summary::marker{
      }
      
 }
-
-
 
 
 
