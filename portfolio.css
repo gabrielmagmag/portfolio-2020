@@ -186,6 +186,7 @@ padding: 25vh 0;
 .har-rentals p{
           text-align: left;
           columns: 2;
+          max-width: 66ch;
      }
 .har-rentals a,
 .har-rentals a:visited{
