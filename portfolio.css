@@ -193,6 +193,20 @@ padding: 25vh 0;
 }
 
 
+.har-rentals summary::-webkit-details-marker{
+     display: inline;
+}
+.har-rentals summary::marker{
+     display: inline;
+}
+
+.har-rentals details{
+     background-color: black;
+     border-radius: 40px;
+     padding: 6vw;
+}
+
+
 /*********** (add @support)
 
 summary::-webkit-details-marker{
