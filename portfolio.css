@@ -26,28 +26,23 @@ img,video{
      max-width: 100vw;
      max-height: 78vh;
 }
-.projectA section 
-{
+.projectA section{
      display: grid;
      grid-gap: 4ch;
 }
-article {
+article{
      display: grid;
      align-content: start;
      padding-top: 9vh;
      padding-bottom: 5vh;
 }
-
-h1
-{
+h1{
      text-align: center;
      font-weight: bold;
      letter-spacing: 0.61px;
 
 }
-
-section p
-{
+section p{
      text-align: center;
 }
 
@@ -78,9 +73,6 @@ summary > img{
 }
 
 
-
-
-
 /*********** CLASSES */
 
 .feadtured{
@@ -101,7 +93,7 @@ padding: 25vh 0;
      background-color: #A2E7FF;
 }
 .projectC{
-     background-color: #fff;
+     background-color: #e2e2e2;
 /*     background-image: linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 100%);*/
 }
 .footer{
@@ -130,25 +122,74 @@ padding: 25vh 0;
      max-height: 32vh;
 }
 
-
 .gallery-appkraft{
      display: flex;
      overflow: auto;
      scroll-snap-type: mandatory;
 }
-
-.gallery-appkraft img
-{
+.gallery-appkraft img{
      scroll-snap-align: center; 
 }
 
-
+.mansory {
+     list-style: none;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 10vw;
+     width: 80vw;
+}
+.mansory li {
+     margin: auto;
+}
+.mansory img {
+     width: 100%;
+     height: auto;
+     margin: auto;     
+}
 
 /*********** (add @support) */
 
 summary::-webkit-details-marker{
      display: none;
 }
-summary::marker {
+summary::marker{
      display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
