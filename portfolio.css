@@ -146,6 +146,27 @@ padding: 25vh 0;
      height: auto;
      margin: auto;     
 }
+.har-rentals {
+     color: white;
+     max-width: 80vw;
+     display: grid;
+}
+.har-rentals img{
+     width: auto;
+     max-width: 100%;
+     height: auto;
+     margin: auto;
+     padding: 4vh 0;
+}
+     .har-rentals p{
+          text-align: left;
+          columns: 2;
+     }
+
+    .har-rentals a, .har-rentals a:visited{
+     color: yellow;        
+}
+
 
 /*********** (add @support) */
 
