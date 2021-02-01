@@ -158,15 +158,20 @@ padding: 25vh 0;
      margin: auto;
      padding: 4vh 0;
 }
-     .har-rentals p{
+.har-rentals p{
           text-align: left;
           columns: 2;
      }
-
-    .har-rentals a, .har-rentals a:visited{
-     color: yellow;        
+.har-rentals a, .har-rentals a:visited{
+     color: green;        
 }
 
+.har-rentals summary::-webkit-details-marker{
+     display: block;
+}
+.har-rentals summary::marker{
+     display: block;
+}
 
 /*********** (add @support) */
 
