@@ -46,8 +46,6 @@ section p{
      text-align: center;
      margin: auto;
 }
-
-
 details{
      margin: auto;
      text-align: center;
@@ -69,8 +67,6 @@ summary > img{
      max-height: 33vh;
      object-fit: scale-down;
 }
-
-
 .feadtured{
 min-height: 80vh;
 padding: 25vh 0;
@@ -95,7 +91,6 @@ padding: 25vh 0;
 .footer{
      background-color: #FDFEB7;
 }
-
 .gabrielRodrigues {
      position: absolute;
      background: none;
@@ -158,17 +153,17 @@ padding: 25vh 0;
      margin: 10vh 2vw;
 }
 
+
 .har-rentals {
      color: white;
      max-width: 90vw;
      display: grid;
+
 }
-.har-rentals img{
-     width: auto;
-     max-width: 100%;
-     height: auto;
-     margin: auto;
-     padding: 4vh 0;
+.har-rentals p{
+     column-count: 2;
+     text-align: left;
+     max-width: 55ch;
 }
 .har-rentals > p{
           text-align: left;
@@ -178,10 +173,6 @@ padding: 25vh 0;
           font-size: 22px;
           line-height: 29px;          
      }
-.har-rentals p{
-     column-count: 2;
-     text-align: left;
-}
 .har-rentals em{
      display: block;
      font-size: 34px;
@@ -193,34 +184,28 @@ padding: 25vh 0;
 .har-rentals a:visited{
      color: green;        
 }
-
+.har-rentals img{
+     width: auto;
+     max-width: 100%;
+     height: auto;
+     margin: auto;
+     padding: 4vh 0;
+}
 .har-rentals details{
      background-color: black;
-     border-radius: 40px;
-     padding: 1vmax;
-}
-.har-rentals summary{
-     display: inline;
+     display: grid;
+     padding: 1em;
+     border-radius: 50px;
 }
 
-.har-rentals h2{
-     padding: 0;
-     margin: 0;
-     display: inline;
+.har-rentals summary
+{
+     font-size: 24px;
 }
 
-
-summary::marker{
-     display: none;
-}
-summary::-webkit-details-marker{
-     display: none;
-}
-.har-rentals summary::marker{
-     display: block;
-}
-.har-rentals summary::-webkit-details-marker{
-     display: block;
+.har-rentals details > p
+{
+     margin-top: 4vmax;
 }
 
 @media only screen and (max-width: 600px) {
@@ -244,6 +229,23 @@ summary::-webkit-details-marker{
 }
 
 
+/*
+summary::marker{
+     display: none;
+}
+summary::-webkit-details-marker{
+     display: none;
+}
+
+     justify-items: center;
+     align-items: center;
+     justify-content: center;
+     align-content: center;
+     align-self: center;
+     justify-self: center;
+
+
+*/
 
 
 
