@@ -1,4 +1,9 @@
+summary::-webkit-details-marker, summary::marker{
+     /* display: none; */
+     margin: auto;
+}
 *{box-sizing: border-box;}
+
 body{
      font-family:
           -apple-system,
@@ -21,15 +26,7 @@ body{
      background-color: #050F1C;
      
 }
-img,video{
-     margin: auto;
-     max-width: 100vw;
-     max-height: 78vh;
-}
-.projectA section{
-     display: grid;
-     grid-gap: 4ch;
-}
+
 article{
      display: grid;
      align-content: start;
@@ -46,6 +43,14 @@ section p{
      text-align: center;
      margin: auto;
 }
+img,video{
+     margin: auto;
+     max-width: 100vw;
+     max-height: 78vh;
+}
+
+
+
 details{
      margin: auto;
      text-align: center;
@@ -53,12 +58,18 @@ details{
 details[open] summary img{
      transform: scale(0.95);
 }
+
 summary{
      cursor: pointer;
      margin: auto;
+
      list-style-image: none;
      outline: none;
      transition: all 0.1s ease-in;
+     
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr;         
 }
 summary:hover{
      filter: brightness(1.1);
@@ -66,31 +77,33 @@ summary:hover{
 summary > img{
      max-height: 33vh;
      object-fit: scale-down;
+     grid-row-start: 1;
 }
-.feadtured{
-min-height: 80vh;
-padding: 25vh 0;
-     
-}
-.projectX{
+
+
+
+.article-neighborhoodExplorer{
      background-color: #082A31;
      background-image: linear-gradient(180deg, #0E414B 0vh, #061F24 70vh);
 }
-.projectA{
+.article-appkraft{
      background-color: #040E1B;
      color: aliceblue;
 /*     background-image: linear-gradient(180deg, #091829 0%, #040E1A 65%);*/
 }
-.projectB{
+.article-galeraBusiness{
      background-color: #A2E7FF;
 }
-.projectC{
+.article-bonusTrack{
      background-color: #e2e2e2;
 /*     background-image: linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 100%);*/
 }
-.footer{
+.article-gabrielRodrigues{
      background-color: #FDFEB7;
 }
+
+
+
 .gabrielRodrigues {
      position: absolute;
      background: none;
@@ -112,6 +125,9 @@ padding: 25vh 0;
      max-width: 37vw;
      max-height: 32vh;
 }
+
+
+
 .gallery-appkraft{
      display: flex;
      overflow: auto;
@@ -120,6 +136,9 @@ padding: 25vh 0;
 .gallery-appkraft img{
      scroll-snap-align: center; 
 }
+
+
+
 .mansory {
      list-style: none;
      margin: auto;
@@ -152,6 +171,7 @@ padding: 25vh 0;
      height: auto;
      margin: 10vh 2vw;
 }
+
 
 
 .har-rentals {
@@ -197,18 +217,17 @@ padding: 25vh 0;
      padding: 1em;
      border-radius: 50px;
 }
-
-.har-rentals summary
-{
+.har-rentals summary{
      font-size: 24px;
 }
-
-.har-rentals details > p
-{
+.har-rentals details > p {
      margin-top: 4vmax;
 }
 
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and
+(max-width: 600px){
 
      .har-rentals em{
           font-size: 24px;
@@ -227,53 +246,3 @@ padding: 25vh 0;
      }
      
 }
-
-
-/*
-summary::marker{
-     display: none;
-}
-summary::-webkit-details-marker{
-     display: none;
-}
-
-     justify-items: center;
-     align-items: center;
-     justify-content: center;
-     align-content: center;
-     align-self: center;
-     justify-self: center;
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
