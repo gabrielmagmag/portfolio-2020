@@ -1,7 +1,9 @@
+/*
 summary::-webkit-details-marker, summary::marker{
-     /* display: none; */
+     display: none;
      margin: auto;
 }
+*/
 *{box-sizing: border-box;}
 
 body{
@@ -55,22 +57,23 @@ details{
      margin: auto;
      text-align: center;
 }
-details[open] summary img{
+details[open] summary > img{
      transform: scale(0.95);
+}
+
+details[open] summary > span
+{
+     display: none;
 }
 
 summary{
      cursor: pointer;
-     margin: auto;
-
      list-style-image: none;
      outline: none;
      transition: all 0.1s ease-in;
-     
      display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 1fr 1fr;         
 }
+
 summary:hover{
      filter: brightness(1.1);
 }
@@ -78,6 +81,13 @@ summary > img{
      max-height: 33vh;
      object-fit: scale-down;
      grid-row-start: 1;
+}
+summary > span
+{
+     text-transform: uppercase;
+     font-size: 0.8em;
+     letter-spacing: 0.08em;
+     
 }
 
 
