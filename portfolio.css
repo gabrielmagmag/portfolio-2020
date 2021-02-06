@@ -1,9 +1,8 @@
-/*
-summary::-webkit-details-marker, summary::marker{
+summary::marker,
+summary::-webkit-details-marker{ 
      display: none;
      margin: auto;
 }
-*/
 *{box-sizing: border-box;}
 
 body{
